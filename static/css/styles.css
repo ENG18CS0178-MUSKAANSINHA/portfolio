@@ -1,0 +1,81 @@
+:root {
+  --radius: 1rem;
+  --primary: #111;       /* dark gray/black */
+  --secondary: #6c757d;  /* bootstrap gray */
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Rounded corners for cards/buttons/images */
+.card, .btn, .rounded-4 {
+  border-radius: var(--radius) !important;
+}
+
+.badge {
+  border-radius: .75rem;
+  font-size: 0.8rem;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: var(--primary) !important;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Resume iframe */
+iframe {
+  border: none;
+  border-radius: var(--radius);
+}
+
+/* Contact form */
+form .form-control {
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+}
+
+/* Buttons */
+.btn {
+  border-radius: .75rem;
+  padding: .5rem 1.25rem;
+}
+.go-home {
+  text-align: center;
+  margin-top: 30px;
+}
+.go-home .btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn btn-primary{
+    background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
