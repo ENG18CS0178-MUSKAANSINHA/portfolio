@@ -1,0 +1,28 @@
+[
+{
+"slug": "ai-resume-analyser",
+"title": "AI Resume Analyser",
+"description": "A Streamlit-powered app that analyses resumes using AI. It extracts text from PDF resumes, processes them with NLP, and evaluates skills, keywords, and formatting against job requirements.",
+"technologies": ["Python", "Streamlit", "scikit-learn", "pandas", "numpy", "pdfplumber", "docx", "unidecode"],
+"github": "https://github.com/yourusername/ai-resume-analyser",
+"demo": "",
+"image": "/static/img/tmp_371b9e3b-80fc-4908-9643-a780e256a959.webp"
+},
+{
+    "slug": "walmart-sales-dashboard",
+    "title": "Sales Dashboard",
+    "description":"An interactive dashboard analyzing Walmart sales data with KPIs, trends, and predictive insights. Built using Python, Pandas, and visualization libraries.",
+    "technologies":["Pandas","Numpy","Scikit-Learn","Streamlit","Plotly","Lightgbm"],
+    "github":"https://github.com/ENG18CS0178-MUSKAANSINHA/walmart_sales",
+    "demo":"",
+    "image":"/static/img/best-sales-dashboard-software-blog.png"
+},
+{
+    "slug": "portfolio-web-app",
+    "title": "Web Portfoilo",
+    "description" : "The very site you’re browsing now ✨ — a responsive personal portfolio built with Flask, Bootstrap, and clean UI design.",
+    "technologies": ["Flask", "HTML" , "CSS" , "JavaScript", "Python" , "Bootstrap","Custom Design"],
+    "github" : "",
+    "image":"/static/img/portfolio.png"
+}
+]
