@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="h3 mb-3">Resume</h1>
+<p class="text-muted">Preview or download my resume below.</p>
+
+<div class="d-flex gap-2 mb-4">
+  <!-- Button to download -->
+  <a class="btn btn-dark" href="/static/resume.pdf" download>
+    <i class="bi bi-download me-1"></i> Download PDF
+  </a>
+  <!-- Button to view in new tab -->
+  <a class="btn btn-outline-dark" href="/static/resume.pdf" target="_blank">
+    <i class="bi bi-box-arrow-up-right me-1"></i> Open in New Tab
+  </a>
+</div>
+
+<!-- Embedded PDF Preview -->
+<div class="ratio ratio-4x3 border rounded-4 shadow-sm">
+  <iframe src="/static/resume.pdf" title="Resume" loading="lazy"></iframe>
+</div>
+<div class="go-home">
+  <a href="{{ url_for('home') }}" class="btn btn-primary">← Home Page </a>
+</div>
+
+{% endblock %}

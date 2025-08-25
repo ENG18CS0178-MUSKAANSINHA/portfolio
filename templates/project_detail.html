@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Top navigation buttons -->
+<div class="d-flex justify-content-between mb-3">
+  <a href="{{ url_for('projects') }}" class="btn btn-sm btn-outline-secondary">← Back to Projects</a>
+  <a href="{{ url_for('home') }}" class="btn btn-primary">← Home Page </a>
+</div>
+
+<!-- Project details -->
+<article class="row g-4">
+  <!-- Left side: text -->
+  <div class="col-md-7">
+    <h1 class="h3">{{ project.title }}</h1>
+    
+    <!-- Optional subtitle -->
+    {% if project.subtitle %}
+      <p class="text-muted">{{ project.subtitle }}</p>
+    {% endif %}
+
+    <!-- Technologies badges -->
+    <div class="d-flex gap-2 flex-wrap mb-3">
+      {% for tech in project.technologies %}
+        <span class="badge text-bg-light border">{{ tech }}</span>
+      {% endfor %}
+    </div>
+
+    <!-- Description -->
+    <p>{{ project.description }}</p>
+
+    <!-- Links -->
+    <div class="d-flex gap-2 mt-3">
+      {% if project.github %}
+        <a href="{{ project.github }}" class="btn btn-dark" target="_blank">View Code</a>
+      {% endif %}
+      {% if project.demo and project.demo != '#' %}
+        <a href="{{ project.demo }}" class="btn btn-outline-dark" target="_blank">Live Demo</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Right side: image -->
+  <div class="col-md-5">
+    <img src="{{ project.image }}" class="img-fluid rounded-4 shadow" alt="{{ project.title }}" />
+  </div>
+</article>
+{% endblock %}

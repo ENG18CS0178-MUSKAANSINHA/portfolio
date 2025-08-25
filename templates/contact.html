@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="h3 mb-3">Contact</h1>
+<p class="text-muted">
+  Feel free to reach out by email or using the form below.
+</p>
+
+<!-- Quick Contact Links -->
+<ul class="list-unstyled mb-4">
+  <li><strong>Email:</strong> <a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></li>
+  <li><strong>GitHub:</strong> <a href="{{ GITHUB }}" target="_blank">{{ GITHUB }}</a></li>
+  <li><strong>LinkedIn:</strong> <a href="{{ LINKEDIN }}" target="_blank">{{ LINKEDIN }}</a></li>
+</ul>
+
+<!-- Contact Form -->
+<form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
+  <div class="col-md-6">
+    <label class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" required />
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input type="email" name="_replyto" class="form-control" required />
+  </div>
+  <div class="col-12">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-control" rows="6" required></textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-dark" type="submit">Send Message</button>
+  </div>
+</form>
+
+<div class="go-home">
+  <a href="{{ url_for('home') }}" class="btn btn-primary"> ← Home Page </a>
+</div>
+{% endblock %}
