@@ -4,9 +4,10 @@
 "title": "AI Resume Analyser",
 "description": "A Streamlit-powered app that analyses resumes using AI. It extracts text from PDF resumes, processes them with NLP, and evaluates skills, keywords, and formatting against job requirements.",
 "technologies": ["Python", "Streamlit", "scikit-learn", "pandas", "numpy", "pdfplumber", "docx", "unidecode"],
-"github": "https://github.com/yourusername/ai-resume-analyser",
+"github": "https://github.com/ENG18CS0178-MUSKAANSINHA/ai-resume-analyser",
 "demo": "",
-"image": "/static/img/tmp_371b9e3b-80fc-4908-9643-a780e256a959.webp"
+"image": "/static/img/tmp_371b9e3b-80fc-4908-9643-a780e256a959.webp",
+"featured" : true
 },
 {
     "slug": "walmart-sales-dashboard",
@@ -15,7 +16,8 @@
     "technologies":["Pandas","Numpy","Scikit-Learn","Streamlit","Plotly","Lightgbm"],
     "github":"https://github.com/ENG18CS0178-MUSKAANSINHA/walmart_sales",
     "demo":"",
-    "image":"/static/img/best-sales-dashboard-software-blog.png"
+    "image":"/static/img/best-sales-dashboard-software-blog.png",
+    "featured" : true
 },
 {
     "slug": "portfolio-web-app",
@@ -23,6 +25,38 @@
     "description" : "The very site you’re browsing now ✨ — a responsive personal portfolio built with Flask, Bootstrap, and clean UI design.",
     "technologies": ["Flask", "HTML" , "CSS" , "JavaScript", "Python" , "Bootstrap","Custom Design"],
     "github" : "https://github.com/ENG18CS0178-MUSKAANSINHA/portfolio",
-    "image":"/static/img/portfolio.png"
+    "demo":"",
+    "image":"/static/img/portfolio.png",
+    "featured" : true
+},
+{
+  "slug": "movie-recommender",
+  "title": "Movie Recommendation App",
+  "description": "A Streamlit app that recommends similar movies using TF-IDF on overview + genres and cosine similarity. No external APIs needed.",
+  "technologies": ["Python", "Streamlit", "scikit-learn", "pandas"],
+  "github": "https://github.com/ENG18CS0178-MUSKAANSINHA/movie_recommender",
+  "demo": "",
+  "image": "/static/img/movie.webp",
+  "featured" : true
+},
+{
+  "slug": "edubot",
+  "title": "EduBot - Personal Learning Assistant",
+  "description": "A Streamlit-based AI tutor that helps students learn a subject interactively. Features include chat-based Q&A, topic summaries, quiz generation, and progress tracking. Uses GPT for AI-powered responses and recommendations.",
+  "technologies": ["Python", "Streamlit", "OpenAI GPT", "SQLite", "pandas"],
+  "github": "https://github.com/yourusername/edubot",
+  "demo": "",
+  "image": "/static/img/edu-bot.jpg",
+  "featured" : true
+},
+{
+  "slug": "expense-tracker",
+  "title": "Personal Expense Tracker",
+  "description": "A Streamlit-based personal finance app to track daily expenses, categorize spending, visualize trends, and export reports. Features include adding expenses, viewing tables, generating summary charts, and downloading CSV reports.",
+  "technologies": ["Python", "Streamlit", "pandas", "Plotly", "Matplotlib"],
+  "github": "https://github.com/ENG18CS0178-MUSKAANSINHA/expense-tracker",
+  "demo": "",
+  "image": "/static/img/expense-tracket.jpg",
+  "featured" : true
 }
 ]
