@@ -22,7 +22,7 @@
     "title": "Web Portfoilo",
     "description" : "The very site you’re browsing now ✨ — a responsive personal portfolio built with Flask, Bootstrap, and clean UI design.",
     "technologies": ["Flask", "HTML" , "CSS" , "JavaScript", "Python" , "Bootstrap","Custom Design"],
-    "github" : "",
+    "github" : "https://github.com/ENG18CS0178-MUSKAANSINHA/portfolio",
     "image":"/static/img/portfolio.png"
 }
 ]
