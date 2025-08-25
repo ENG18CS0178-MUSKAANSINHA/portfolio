@@ -1,0 +1,10 @@
+# Allow all search engines to crawl your site
+User-agent: *
+Allow: /
+
+# Don’t index server error pages
+Disallow: /404
+Disallow: /500
+
+# Optional: point to sitemap if you create one later
+# Sitemap: https://yourdomain.com/sitemap.xml
