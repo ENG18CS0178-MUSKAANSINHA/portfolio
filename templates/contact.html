@@ -12,26 +12,16 @@
   <li><strong>LinkedIn:</strong> <a href="{{ LINKEDIN }}" target="_blank">{{ LINKEDIN }}</a></li>
 </ul>
 
-<!-- Contact Form -->
-<form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
-  <div class="col-md-6">
-    <label class="form-label">Name</label>
-    <input type="text" name="name" class="form-control" required />
-  </div>
-  <div class="col-md-6">
-    <label class="form-label">Email</label>
-    <input type="email" name="_replyto" class="form-control" required />
-  </div>
-  <div class="col-12">
-    <label class="form-label">Message</label>
-    <textarea name="message" class="form-control" rows="6" required></textarea>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-dark" type="submit">Send Message</button>
-  </div>
-</form>
+<!-- Embedded Google Form -->
+<div class="google-form">
+  <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSc0u3jdKU6VKFKnmWEGc8stMUVweT-76ngjY1Hwcoxfbyc1yg/viewform?embedded=true" 
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+      Loading…
+  </iframe>
+</div>
 
-<div class="go-home">
+<div class="go-home mt-4">
   <a href="{{ url_for('home') }}" class="btn btn-primary"> ← Home Page </a>
 </div>
 {% endblock %}
